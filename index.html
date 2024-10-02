@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- div class for the custom cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/background_future.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="content">
+    <div class="typewriter">
+      <h1>Welcome to My Portfolio</h1>
+    </div> 
+    
+    <h1 class="glitch-text">Here are the important links about me : </h1>
+    
+    <!-- Buttons -->
+    <div class="button-container">
+      <a href="assets/Alexandre.Vinson_CV.pdf" download="Alexandre.Vinson_CV.pdf" class="cyberpunk-button">Download My CV</a>
+      <a href="https://github.com/Alexxx1407" target="_blank" class="cyberpunk-button">GitHub</a>
+      <a href="https://www.linkedin.com/in/alexandre-vinson-25618724b/" target="_blank" class="cyberpunk-button">LinkedIn</a>
+      <a href="mailto:alexandre.vinson1@gmail.com" class="cyberpunk-button">Email Me</a>
+      <a href="projects.html" class="cyberpunk-button">My Projects</a>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div id="side-menu" class="side-menu">
+      <a href="javascript:void(0)" class="close-btn" id="close-menu">&times;</a>
+      <h2>About Me</h2>
+      <p>Hello, I'm Alexandre Vinson!</p>
+      <p>I'm a passionate developer, i love cyber security, docker, and linux, i do my projects for fun.</p>
+      <p><strong>Skills:</strong> HTML, CSS, JavaScript, Python, linux, docker, flutter.</p>
+      <p><strong>Hobbies:</strong> Tech exploration, video games, reading, sports, trips.</p>
+    </div>
+
+    <!-- Open Button for Side Menu -->
+    <span id="open-menu" class="open-btn">&#9776; About Me</span>
+
+  </div>
+
+  <!-- Sound Effect for Buttons -->
+  <audio id="cyberpunk-sound" src="assets/click.mp4"></audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+<footer class="footer">
+  <p>Made by Alexandre Vinson © 2024</p>
+</footer>
+</html>

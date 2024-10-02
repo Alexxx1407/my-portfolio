@@ -1,0 +1,327 @@
+/* Full-page styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Video Background Styling */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content styling */
+.content {
+  position: relative;
+  z-index: 1;
+  color: #00ffff;
+  text-align: center;
+  padding-top: 150px;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+  margin-bottom: 50px;
+}
+
+/* Cyberpunk Button Styling */
+.cyberpunk-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  color: #00ffff;
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cyberpunk-button:hover {
+  color: #ff00ff;
+  border-color: #ff00ff;
+  box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff;
+}
+
+/* Slide-in Sidebar Menu Styling */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+.side-menu h2 {
+  font-size: 2rem;
+  padding-left: 20px;
+}
+
+.side-menu p {
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #ff00ff;
+  cursor: pointer;
+}
+
+/* Open Button for Sidebar */
+.open-btn {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  font-size: 2rem;
+  color: #00ffff;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 10px 40px;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+  transition: 0.3s ease;
+}
+
+.open-btn:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff;
+}
+
+/* Custom styling for Return to Main Page button */
+#return-button {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px 40px;
+  color: #ffffff;
+  background-color: #ff0066;
+  border: none;
+  font-size: 1.7rem;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px #ff3399, 0 0 40px #ff0066;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#return-button:hover {
+  background-color: #ff3399;
+  box-shadow: 0 0 40px #ff3399, 0 0 80px #ff66cc;
+}
+
+
+/* Projects Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Project Box Styling */
+.project-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box h3 {
+  font-size: 2.5rem;
+  color: #ff00ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+.project-box p {
+  color: #00ffff;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #ff00ff, 0 0 60px #00ffff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .project-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.cyberpunk-button:hover {
+  color: #ff00ff;
+  border-color: #ff00ff;
+  box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff;
+  transform: translateY(-5px) scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Footer Styling */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #00ffff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+}
+
+/*  style for the welcome text   */
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 3px solid #00ffff; /* Typewriter cursor */
+  white-space: nowrap;
+  margin: 0 auto;
+  font-size: 3rem;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #00ffff; }
+}
+
+/* Glitch effect with different color shades */
+.glitch-text {
+  font-size: 4rem;
+  color: #00ffff;
+  position: relative;
+  animation: glitch-flicker 3s infinite alternate-reverse; /* Flicker every 3 seconds */
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: "Glitch Effect";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  color: #ff00ff;
+  animation: glitch 1.5s infinite; /* Glitch every 1.5 seconds */
+  z-index: -1;
+}
+
+
+.glitch-text::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff00ff;
+  clip: rect(10px, 9999px, 100px, 0);
+  animation: glitch 1.5s infinite ease-in-out alternate-reverse; /* Glitch alternate timing */
+}
+
+.glitch-text::after {
+  left: -2px;
+  text-shadow: -2px 0 #00ffff, 2px 2px 2px rgba(255, 255, 255, 0.2);
+  clip: rect(40px, 9999px, 80px, 0);
+  animation: glitch 1.5s infinite ease-in-out; /* Glitch alternate timing */
+}
+
+/* Glitch Animation Keyframes */
+@keyframes glitch {
+  0% {
+    clip: rect(5px, 9999px, 80px, 0);
+    transform: skew(0.3deg);
+  }
+  15% {
+    clip: rect(85px, 9999px, 100px, 0);
+    transform: skew(1deg);
+  }
+  30% {
+    clip: rect(45px, 9999px, 90px, 0);
+    transform: skew(0.5deg);
+  }
+  45% {
+    clip: rect(15px, 9999px, 70px, 0);
+    transform: skew(1.5deg);
+  }
+  60% {
+    clip: rect(30px, 9999px, 90px, 0);
+    transform: skew(0deg);
+  }
+  75% {
+    clip: rect(55px, 9999px, 110px, 0);
+    transform: skew(-0.5deg);
+  }
+  100% {
+    clip: rect(65px, 9999px, 120px, 0);
+    transform: skew(-1.2deg);
+  }
+}
+
+@keyframes glitch-flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7; /* Gentle flicker */
+  }
+}
+
+/* Cursor edit */
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 2px solid #ff00ff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}

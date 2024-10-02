@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="custom-cursor" id="custom-cursor"></div>
+
+  <!-- Video Background for Projects -->
+  <div class="video-background">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/projects.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Projects Content -->
+  <div class="content">
+    <header>
+      <h1>My Projects</h1>
+    </header>
+
+    <!-- Project Boxes Container -->
+    <div class="projects-container">
+      <!-- Project 1: Discord Bot -->
+      <div class="project-box">
+        <h3>Project Discord</h3>
+        <p>This is a Discord bot about an rpg, with a lot of different things to do such as, hunting npcs, quests, items etc.</p>
+        <a href="https://github.com/Alexxx1407/Projet_DiscordV2" target="_blank" class="cyberpunk-button">View Project</a>
+      </div>
+
+      <!-- Project 2: Weather App -->
+      <div class="project-box">
+        <h3>App Meteo</h3>
+        <p>A weather forecasting app that provides real-time weather updates using the OpenWeatherMap API. Responsive design and mobile-friendly. Showing graphs etc</p>
+        <a href="https://github.com/Alexxx1407/App_Meteo" target="_blank" class="cyberpunk-button">View Project</a>
+      </div>
+    </div>
+
+    <!-- Return to Main Page Button -->
+    <div class="return-button-container">
+      <a href="index.html" id="return-button" class="cyberpunk-button">Return to Main Page</a>
+    </div>
+  </div>
+
+  <!-- Sound Effect for Buttons -->
+  <audio id="cyberpunk-sound" src="assets/click_return.mp4"></audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
