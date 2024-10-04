@@ -9,6 +9,12 @@ body, html {
   zoom: 0.5;
 }
 
+.content {
+  max-width: 1200px; /* Ensure the content doesn't overflow beyond a certain width */
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* Video Background Styling */
 .video-background {
   position: fixed;
