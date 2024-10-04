@@ -67,3 +67,22 @@ document.addEventListener('mousemove', function(e) {
   cursor.style.left = `${e.pageX}px`;
   cursor.style.top = `${e.pageY}px`;
 });
+
+const openModal = document.querySelector('.open-modal');
+const closeModal = document.querySelector('.close-modal');
+const modal = document.getElementById('project-modal');
+
+openModal.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+

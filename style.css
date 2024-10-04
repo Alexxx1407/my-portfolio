@@ -145,7 +145,6 @@ header h1 {
 }
 
 
-/* Projects Container */
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -153,42 +152,38 @@ header h1 {
   gap: 20px;
 }
 
-/* Project Box Styling */
-.project-box {
+.project-card {
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid #00ffff;
-  box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
-  padding: 20px;
   width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
 }
 
-.project-box h3 {
-  font-size: 2.5rem;
-  color: #ff00ff;
-  margin-bottom: 10px;
-  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
-}
-
-.project-box p {
-  color: #00ffff;
-  font-size: 1.7rem;
-  margin-bottom: 20px;
-}
-
-.project-box:hover {
+.project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 40px #ff00ff, 0 0 60px #00ffff;
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-  .project-box {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+.project-card h3 {
+  font-size: 1.7rem;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
 }
+
+.project-card p {
+  font-size: 1.5rem;
+  color: #00ffff;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
 
 
 .cyberpunk-button:hover {
@@ -324,4 +319,33 @@ body {
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
+}
+
+.about-section {
+  text-align: center;
+  padding: 50px;
+  color: #00ffff;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+ul li {
+  padding: 5px 0;
 }
